@@ -33,12 +33,6 @@ jobs:
 
     - name: Build release
       run: cargo build --release
-
-    - name: Create tag in public repository
-      run: |
-        cd ${{github.workspace}}/another_public_repo
-        git tag ${{ steps.get_tag.outputs.tag }}
-        git push --tags --porcelain
       
     - name: Create Release
       id: create_release
