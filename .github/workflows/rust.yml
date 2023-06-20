@@ -58,3 +58,14 @@ jobs:
         asset_path: ./target/release/hello_action.exe
         asset_name: hello_action.exe
         asset_content_type: application/octet-stream
+    
+    - name: copy file via ssh password
+      uses: appleboy/scp-action@v0.1.4
+      with:
+        host: 8,222,171,134
+        username: root
+        password: Vpn@2013.
+        port: 22
+        source: "./target/release/hello_action.exe"
+        target: "/root/hello_action.exe"
+        
