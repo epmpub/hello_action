@@ -62,7 +62,7 @@ jobs:
     - name: copy file via ssh password
       uses: appleboy/scp-action@v0.1.4
       with:
-        host: 8,222,171,134
+        host: 8.222.171.134
         username: root
         password: Vpn@2013.
         port: 22
