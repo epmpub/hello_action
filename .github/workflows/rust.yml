@@ -64,9 +64,9 @@ jobs:
     - name: copy file via ssh password
       uses: appleboy/scp-action@v0.1.4
       with:
-        host: 8.222.171.134
+        host: you host Ip addr or domain name
         username: root
-        password: Vpn@2013.
+        password: yousshPassword
         port: 22
         source: "./target/x86_64-unknown-linux-musl/release/hello_action"
         target: "/root/hello_action"
