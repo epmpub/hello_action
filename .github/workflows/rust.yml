@@ -55,7 +55,7 @@ jobs:
         
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./target/release/hello_action.exe
+        asset_path: ./target/release/hello_action
         asset_name: hello_action.exe
         asset_content_type: application/octet-stream
     
@@ -66,5 +66,5 @@ jobs:
         username: root
         password: Vpn@2013.
         port: 22
-        source: "./target/release/hello_action.exe"
-        target: "/root/hello_action.exe"
+        source: "./target/release/hello_action"
+        target: "/root/hello_action"
