@@ -12,7 +12,7 @@ env:
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     permissions: write-all
     
 
@@ -68,4 +68,3 @@ jobs:
         port: 22
         source: "./target/release/hello_action.exe"
         target: "/root/hello_action.exe"
-        
